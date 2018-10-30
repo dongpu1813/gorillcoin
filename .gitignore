@@ -1,13 +1,13 @@
 *.tar.gz
 
 *.exe
-src/faithcoin
-src/faithcoind
-src/faithcoin-cli
-src/faithcoin-tx
-src/test/test_faithcoin
-src/test/test_faithcoin_fuzzy
-src/qt/test/test_faithcoin-qt
+src/gorillcoin
+src/gorillcoind
+src/gorillcoin-cli
+src/gorillcoin-tx
+src/test/test_gorillcoin
+src/test/test_gorillcoin_fuzzy
+src/qt/test/test_gorillcoin-qt
 
 # autoreconf
 Makefile.in
@@ -74,12 +74,12 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-faithcoin-qt
-faithcoin-Qt.app
+gorillcoin-qt
+gorillcoin-Qt.app
 
 # Unit-tests
 Makefile.test
-faithcoin-qt_test
+gorillcoin-qt_test
 
 # Resources cpp
 qrc_*.cpp
@@ -92,7 +92,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_faithcoin.coverage/
+test_gorillcoin.coverage/
 total.coverage/
 coverage_percent.txt
 

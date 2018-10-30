@@ -1,10 +1,10 @@
 <!--- Remove sections that do not apply -->
 
-This issue tracker is only for technical issues related to faithcoin-core.
+This issue tracker is only for technical issues related to gorillcoin-core.
 
-General faithcoin questions and/or support requests and are best directed to the [faithcointalk.io forums](https://faithcointalk.io/).
+General gorillcoin questions and/or support requests and are best directed to the [gorillcointalk.io forums](https://gorillcointalk.io/).
 
-For reporting security issues, please contact the faithcoin developers on the #faithcoin-dev Freenode IRC channel or alternatively you can email us at contact@faithco.in.
+For reporting security issues, please contact the gorillcoin developers on the #gorillcoin-dev Freenode IRC channel or alternatively you can email us at contact@faithco.in.
 
 ### Describe the issue
 
@@ -23,7 +23,7 @@ Tell us what happens instead
 ### Screenshots.
 If the issue is related to the GUI, screenshots can be added to this issue via drag & drop.
 
-### What version of faithcoin-core are you using?
+### What version of gorillcoin-core are you using?
 List the version number/commit ID, and if it is an official binary, self compiled or a distribution package such as PPA.
 
 ### Machine specs:
