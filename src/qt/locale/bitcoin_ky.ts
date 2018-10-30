@@ -38,8 +38,8 @@
         <translation>Билдирүүнү &amp;текшерүү...</translation>
     </message>
     <message>
-        <source>faithcoin</source>
-        <translation>faithcoin</translation>
+        <source>gorillcoin</source>
+        <translation>gorillcoin</translation>
     </message>
     <message>
         <source>Wallet</source>

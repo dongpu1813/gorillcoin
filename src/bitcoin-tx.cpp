@@ -54,10 +54,10 @@ static int AppInitRawTx(int argc, char* argv[])
     if (argc<2 || gArgs.IsArgSet("-?") || gArgs.IsArgSet("-h") || gArgs.IsArgSet("-help"))
     {
         // First part of help message is specific to this utility
-        std::string strUsage = strprintf(_("%s faithcoin-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = strprintf(_("%s gorillcoin-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
-              "  faithcoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded faithcoin transaction") + "\n" +
-              "  faithcoin-tx [options] -create [commands]   " + _("Create hex-encoded faithcoin transaction") + "\n" +
+              "  gorillcoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded gorillcoin transaction") + "\n" +
+              "  gorillcoin-tx [options] -create [commands]   " + _("Create hex-encoded gorillcoin transaction") + "\n" +
               "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());

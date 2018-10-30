@@ -54,8 +54,8 @@
         <translation>&amp;Odaberi</translation>
     </message>
     <message>
-        <source>These are your faithcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ovo su vaše faithcoin adrese za slanje novca. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
+        <source>These are your gorillcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ovo su vaše gorillcoin adrese za slanje novca. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -174,8 +174,8 @@
         <translation>Re-indeksiranje blokova na disku...</translation>
     </message>
     <message>
-        <source>Send coins to a faithcoin address</source>
-        <translation>Slanje novca na faithcoin adresu</translation>
+        <source>Send coins to a gorillcoin address</source>
+        <translation>Slanje novca na gorillcoin adresu</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -198,8 +198,8 @@
         <translation>&amp;Potvrdite poruku...</translation>
     </message>
     <message>
-        <source>faithcoin</source>
-        <translation>faithcoin</translation>
+        <source>gorillcoin</source>
+        <translation>gorillcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -226,12 +226,12 @@
         <translation>Šifriranje privatnih ključeva koji u novčaniku</translation>
     </message>
     <message>
-        <source>Sign messages with your faithcoin addresses to prove you own them</source>
-        <translation>Poruku potpišemo s faithcoin adresom, kako bi dokazali vlasništvo nad tom adresom</translation>
+        <source>Sign messages with your gorillcoin addresses to prove you own them</source>
+        <translation>Poruku potpišemo s gorillcoin adresom, kako bi dokazali vlasništvo nad tom adresom</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified faithcoin addresses</source>
-        <translation>Provjeravanje poruke, kao dokaz, da je potpisana navedenom faithcoin adresom</translation>
+        <source>Verify messages to ensure they were signed with specified gorillcoin addresses</source>
+        <translation>Provjeravanje poruke, kao dokaz, da je potpisana navedenom gorillcoin adresom</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -250,8 +250,8 @@
         <translation>Traka kartica</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and faithcoin: URIs)</source>
-        <translation>Zatraži uplatu (stvara QR kod i faithcoin: URI adresu)</translation>
+        <source>Request payments (generates QR codes and gorillcoin: URIs)</source>
+        <translation>Zatraži uplatu (stvara QR kod i gorillcoin: URI adresu)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -262,16 +262,16 @@
         <translation>Prikaži popis korištenih adresa i oznaka za primanje novca</translation>
     </message>
     <message>
-        <source>Open a faithcoin: URI or payment request</source>
-        <translation>Otvori faithcoin: URI adresu ili zahtjev za uplatu</translation>
+        <source>Open a gorillcoin: URI or payment request</source>
+        <translation>Otvori gorillcoin: URI adresu ili zahtjev za uplatu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Opcije &amp;naredbene linije</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to faithcoin network</source>
-        <translation><numerusform>%n aktivna veza na faithcoin mrežu</numerusform><numerusform>%n aktivnih veza na faithcoin mrežu</numerusform><numerusform>%n aktivnih veza na faithcoin mrežu</numerusform></translation>
+        <source>%n active connection(s) to gorillcoin network</source>
+        <translation><numerusform>%n aktivna veza na gorillcoin mrežu</numerusform><numerusform>%n aktivnih veza na gorillcoin mrežu</numerusform><numerusform>%n aktivnih veza na gorillcoin mrežu</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
@@ -423,11 +423,11 @@
     </message>
     <message>
         <source>The label associated with this address list entry</source>
-        <translation>Oznaka faithcoin adrese</translation>
+        <translation>Oznaka gorillcoin adrese</translation>
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>faithcoin adresa. Izmjene adrese su moguće samo za adrese za slanje.</translation>
+        <translation>gorillcoin adresa. Izmjene adrese su moguće samo za adrese za slanje.</translation>
     </message>
     <message>
         <source>&amp;Address</source>
@@ -568,8 +568,8 @@
         <translation>&amp;Trošenje nepotvrđenih vraćenih iznosa</translation>
     </message>
     <message>
-        <source>Automatically open the faithcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatski otvori port faithcoin klijenta na ruteru. To radi samo ako ruter podržava UPnP i ako je omogućen.</translation>
+        <source>Automatically open the gorillcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatski otvori port gorillcoin klijenta na ruteru. To radi samo ako ruter podržava UPnP i ako je omogućen.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -617,7 +617,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Izaberite željeni najmanji dio faithcoina koji će biti prikazan u sučelju i koji će se koristiti za plaćanje.</translation>
+        <translation>Izaberite željeni najmanji dio gorillcoina koji će biti prikazan u sučelju i koji će se koristiti za plaćanje.</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -643,8 +643,8 @@
         <translation>Oblik</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the faithcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazani podatci mogu biti zastarjeli. Vaš novčanik se automatski sinkronizira s faithcoin mrežom kada je veza uspostavljena, ali taj proces još nije završen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the gorillcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazani podatci mogu biti zastarjeli. Vaš novčanik se automatski sinkronizira s gorillcoin mrežom kada je veza uspostavljena, ali taj proces još nije završen.</translation>
     </message>
     <message>
         <source>Total:</source>
@@ -1034,8 +1034,8 @@
         <translation>Izvršavaj u pozadini kao uslužnik i prihvaćaj komande</translation>
     </message>
     <message>
-        <source>faithcoin Core</source>
-        <translation>faithcoin Core</translation>
+        <source>gorillcoin Core</source>
+        <translation>gorillcoin Core</translation>
     </message>
     <message>
         <source>Block creation options:</source>

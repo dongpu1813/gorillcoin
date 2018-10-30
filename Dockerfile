@@ -1,9 +1,9 @@
 FROM ubuntu:16.04
 
-COPY ./faithcoin.conf /root/.faithcoin/faithcoin.conf
+COPY ./gorillcoin.conf /root/.gorillcoin/gorillcoin.conf
 
-COPY . /faithcoin
-WORKDIR /faithcoin
+COPY . /gorillcoin
+WORKDIR /gorillcoin
 
 #shared libraries and dependencies
 RUN apt update
@@ -22,13 +22,13 @@ RUN apt-get install -y libminiupnpc-dev
 #ZMQ
 RUN apt-get install -y libzmq3-dev
 
-#build faithcoin source
+#build gorillcoin source
 RUN ./autogen.sh
 RUN ./configure
 RUN make
 RUN make install
 
 #open service port
-EXPOSE 9666 19666
+EXPOSE 9888 19888
 
-CMD ["faithcoind", "--printtoconsole"]
+CMD ["gorillcoind", "--printtoconsole"]

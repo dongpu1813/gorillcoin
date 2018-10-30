@@ -48,7 +48,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "BBC NEWS 20/Dec/2017 Bitcoin Cash deals frozen as insider trading is probed";
+    const char* pszTimestamp = "NY Times 29/Oct/2018 There Is Still So Much Evil";
     const CScript genesisOutputScript = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -111,30 +111,30 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xd0;
-        pchMessageStart[1] = 0xe1;
-        pchMessageStart[2] = 0xf5;
-        pchMessageStart[3] = 0xec;
-        nDefaultPort = 9666;
+        pchMessageStart[0] = 0xa0;
+        pchMessageStart[1] = 0xc1;
+        pchMessageStart[2] = 0xe5;
+        pchMessageStart[3] = 0xf1;
+        nDefaultPort = 9888;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1513784917, 2084820399, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1540827981, 2084590928, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0xee686214586277080977cf43d2a0b38bcd48d696129b19c026d8208f9e745cea"));
-        assert(genesis.hashMerkleRoot == uint256S("0x805d8d176abe872f5cd40b558869a0d25ed02ae471fa33f80185443e5ca9cb40"));
+        assert(consensus.hashGenesisBlock == uint256S("0x52cb9771e4b8b0471fa0c8ff65418ef6df54bb77ad21aa1d4e9b6ce21829e48a"));
+        assert(genesis.hashMerkleRoot == uint256S("0x202ce1cd613eef3d6b2661bf69be6527980690980685086166513d1d19595fee"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         vSeeds.emplace_back("dnsseed.faithco.in", true);
-        //vSeeds.emplace_back("seed-a.faithcoin.loshan.co.uk", true);
+        //vSeeds.emplace_back("seed-a.gorillcoin.loshan.co.uk", true);
         //vSeeds.emplace_back("dnsseed.thrasher.io", true);
-        //vSeeds.emplace_back("dnsseed.faithcointools.com", true);
-        //vSeeds.emplace_back("dnsseed.faithcoinpool.org", true);
+        //vSeeds.emplace_back("dnsseed.gorillcointools.com", true);
+        //vSeeds.emplace_back("dnsseed.gorillcoinpool.org", true);
         //vSeeds.emplace_back("dnsseed.koin-project.com", false);
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,35);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,38);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
         base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,50);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,35);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,38);
         base58Prefixes[EXT_PUBLIC_KEY] = {0xff, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0xff, 0x88, 0xAD, 0xE4};
 
@@ -146,10 +146,11 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {  0, uint256S("0xee686214586277080977cf43d2a0b38bcd48d696129b19c026d8208f9e745cea")},
-                {  650, uint256S("0x2b90731cbe9d628f5db73bf62ef124c26201d74706ca11278256fa3c32a92898")},
+                {  0, uint256S("52cb9771e4b8b0471fa0c8ff65418ef6df54bb77ad21aa1d4e9b6ce21829e48a")},
+/*                
+{  650, uint256S("0x2b90731cbe9d628f5db73bf62ef124c26201d74706ca11278256fa3c32a92898")},
 
-/*
+
                 {  1500, uint256S("0x841a2965955dd288cfa707a755d05a54e45f8bd476835ec9af4402a2b59a2967")},
                 {  4032, uint256S("0x9ce90e427198fc0ef05e5905ce3503725b80e26afd35a987965fd7e3d9cf0846")},
                 {  8064, uint256S("0xeb984353fc5190f210651f150c40b8a4bab9eeeff0b729fcb3987da694430d70")},
@@ -172,7 +173,7 @@ public:
 
         chainTxData = ChainTxData{
             // Data as of block db42d00d824950a125f9b08b6b6c282c484781562fa8b3bd29d6ce4a2627c348 (height 1259851).
-            1513784917, // * UNIX timestamp of last known number of transactions
+            1540827981, // * UNIX timestamp of last known number of transactions
             0,  // * total number of transactions between genesis and that timestamp
                     //   (the tx=... number in the SetBestChain debug.log lines)
             0.0     // * estimated number of transactions per second after that timestamp
@@ -234,8 +235,8 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("testnet-seed.faithcointools.com", true);
-        vSeeds.emplace_back("seed-b.faithcoin.loshan.co.uk", true);
+        vSeeds.emplace_back("testnet-seed.gorillcointools.com", true);
+        vSeeds.emplace_back("seed-b.gorillcoin.loshan.co.uk", true);
         vSeeds.emplace_back("dnsseed-testnet.thrasher.io", true);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);

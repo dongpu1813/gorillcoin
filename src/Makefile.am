@@ -66,11 +66,11 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += faithcoind
+  bin_PROGRAMS += gorillcoind
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += faithcoin-cli faithcoin-tx
+  bin_PROGRAMS += gorillcoin-cli gorillcoin-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
@@ -370,16 +370,16 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-faithcoind_SOURCES = bitcoind.cpp
-faithcoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-faithcoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-faithcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+gorillcoind_SOURCES = bitcoind.cpp
+gorillcoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+gorillcoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+gorillcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-faithcoind_SOURCES += bitcoind-res.rc
+gorillcoind_SOURCES += bitcoind-res.rc
 endif
 
-faithcoind_LDADD = \
+gorillcoind_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -393,38 +393,38 @@ faithcoind_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-faithcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+gorillcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # bitcoin-cli binary #
-faithcoin_cli_SOURCES = bitcoin-cli.cpp
-faithcoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-faithcoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-faithcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+gorillcoin_cli_SOURCES = bitcoin-cli.cpp
+gorillcoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+gorillcoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+gorillcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-faithcoin_cli_SOURCES += bitcoin-cli-res.rc
+gorillcoin_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-faithcoin_cli_LDADD = \
+gorillcoin_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-faithcoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+gorillcoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # bitcoin-tx binary #
-faithcoin_tx_SOURCES = bitcoin-tx.cpp
-faithcoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-faithcoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-faithcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+gorillcoin_tx_SOURCES = bitcoin-tx.cpp
+gorillcoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+gorillcoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+gorillcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-faithcoin_tx_SOURCES += bitcoin-tx-res.rc
+gorillcoin_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-faithcoin_tx_LDADD = \
+gorillcoin_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -432,7 +432,7 @@ faithcoin_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-faithcoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+gorillcoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

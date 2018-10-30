@@ -14,8 +14,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>faithcoin</source>
-        <translation>faithcoin</translation>
+        <source>gorillcoin</source>
+        <translation>gorillcoin</translation>
     </message>
     </context>
 <context>
@@ -156,8 +156,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>faithcoin Core</source>
-        <translation>faithcoin Jezrga</translation>
+        <source>gorillcoin Core</source>
+        <translation>gorillcoin Jezrga</translation>
     </message>
     </context>
 </TS>

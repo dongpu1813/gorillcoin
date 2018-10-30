@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gorillcoin
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: gorillcoin
+  template:
+    metadata:
+      labels:
+        app: gorillcoin
+        version: v0.15
+    spec:
+      containers:
+      - name: gorillcoin
+        image: toolboc/gorillcoin
+        ports:
+        - containerPort: 9888
+          name: gorillcoin
+          protocol: TCP
